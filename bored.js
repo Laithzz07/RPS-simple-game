@@ -3,9 +3,9 @@ let win = 0,
   tie = 0;
 
 function res(x) {
-  let computerChoise = Math.floor(Math.random() * 3) + 1;
-  console.log(computerChoise);
-  if (computerChoise === 1) {
+  let computerChoice = Math.floor(Math.random() * 3) + 1;
+  console.log(computerChoice);
+  if (computerChoice === 1) {
     document.getElementById(`h1`).textContent = `Computer: ✊`;
     if (x === 1) {
       tie++;
@@ -28,7 +28,7 @@ function res(x) {
       document.getElementById(`t`).textContent = `Ties: ${tie}`;
       document.getElementById(`h1`).textContent = ``;
     }
-  } else if (computerChoise === 2) {
+  } else if (computerChoice === 2) {
     document.getElementById(`h1`).textContent = `Computer: ✋`;
     if (x === 1) {
       lose++;
@@ -51,7 +51,7 @@ function res(x) {
       document.getElementById(`t`).textContent = `Ties: ${tie}`;
       document.getElementById(`h1`).textContent = ``;
     }
-  } else if (computerChoise === 3) {
+  } else if (computerChoice === 3) {
     document.getElementById(`h1`).textContent = `Computer: ✌️`;
     if (x === 1) {
       win++;
